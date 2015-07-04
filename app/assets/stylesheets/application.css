@@ -14,11 +14,11 @@
  *= require_self
  */
 
-.first {
+.col-md-12 {
   background-color: red;
 }
 
-.second {
+.col-lg-11 {
   background-color: #EEE0E5;
 }
 
