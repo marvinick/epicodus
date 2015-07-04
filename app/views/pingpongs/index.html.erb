@@ -1,5 +1,5 @@
 <div class="text-center ping_pong">
-  <h3>What's it going to be? Ping, Pong or Ping Pong?</h3>
+  <h3>Ping OR Pong OR Ping Pong ?</h3>
 
   <button onclick="myFunction()", class="btn btn-primary btn-lg">Click Me</button>
 
@@ -10,17 +10,17 @@
 function myFunction() {
     var number = prompt("Enter a number");
 
-    if (number % 5 == 0) {
+    if (number % 3 == 0 && number % 5 == 0) {
         document.getElementById("result").innerHTML =
-        "Pong";
+        "Ping Pong";
     }
     else if (number % 3 == 0) {
         document.getElementById("result").innerHTML =
         "Ping";
     }
-    else if (number % 3 == 0 && number % 5 == 0) {
+    else if (number % 5 == 0) {
         document.getElementById("result").innerHTML =
-        "Ping Pong";
+        "Pong";
     }
     else {
         document.getElementById("result").innerHTML =
