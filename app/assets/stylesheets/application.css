@@ -29,3 +29,12 @@
 .col-md-4 {
   background-color: #6959CD;
 }
+
+.navbar {
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.ping-pong {
+  padding-top: 200px;
+}

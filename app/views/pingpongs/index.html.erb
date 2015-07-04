@@ -1,0 +1,30 @@
+<div class="text-center ping_pong">
+  <h3>What's it going to be? Ping, Pong or Ping Pong?</h3>
+
+  <button onclick="myFunction()", class="btn btn-primary btn-lg">Click Me</button>
+
+  <h2 id="result"></h2>
+</div>
+
+<script>
+function myFunction() {
+    var number = prompt("Enter a number");
+
+    if (number % 5 == 0) {
+        document.getElementById("result").innerHTML =
+        "Pong";
+    }
+    else if (number % 3 == 0) {
+        document.getElementById("result").innerHTML =
+        "Ping";
+    }
+    else if (number % 3 == 0 && number % 5 == 0) {
+        document.getElementById("result").innerHTML =
+        "Ping Pong";
+    }
+    else {
+        document.getElementById("result").innerHTML =
+        "Bada bing, bada boom!! It's not a Ping, nor a Pong!!!!";
+    }
+}
+</script>

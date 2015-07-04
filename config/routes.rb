@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :pingpongs
+
   resources :firsts
   root to: "firsts#index"
 
