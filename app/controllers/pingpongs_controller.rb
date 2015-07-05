@@ -1,28 +1,20 @@
 class PingpongsController < ApplicationController
   before_action :set_pingpong, only: [:show, :edit, :update, :destroy]
 
-  # GET /pingpongs
-  # GET /pingpongs.json
   def index
     @pingpongs = Pingpong.all
   end
 
-  # GET /pingpongs/1
-  # GET /pingpongs/1.json
   def show
   end
 
-  # GET /pingpongs/new
   def new
     @pingpong = Pingpong.new
   end
 
-  # GET /pingpongs/1/edit
   def edit
   end
 
-  # POST /pingpongs
-  # POST /pingpongs.json
   def create
     @pingpong = Pingpong.new(pingpong_params)
     if @pingpong.save
@@ -44,8 +36,6 @@ class PingpongsController < ApplicationController
     end
   end
 
-  # DELETE /pingpongs/1
-  # DELETE /pingpongs/1.json
   def destroy
     @pingpong.destroy
     respond_to do |format|

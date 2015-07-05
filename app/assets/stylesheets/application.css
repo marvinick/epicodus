@@ -14,6 +14,17 @@
  *= require_self
  */
 
+h2.med {
+  line-height: 200%;
+}
+p.med {
+    line-height: 100%;
+}
+
+h5.med {
+    line-height: 100%;
+}
+
 .col-md-12 {
   background-color: red;
 }
