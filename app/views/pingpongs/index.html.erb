@@ -1,30 +1,42 @@
-<div class="text-center ping_pong">
-  <h3>Ping OR Pong OR Ping Pong ?</h3>
+<div class="container" style="width: 300px">
+    <div class="text-center">
+      <h3>Ping Pong</h3>
 
-  <button onclick="myFunction()", class="btn btn-primary btn-lg">Click Me</button>
+    <form id="pingpong">
+      <input type="number" class="form-control" placeholder="Please enter a number"></input><br>
+    </form>
+    <button class="btn btn-primary btn-lg" onclick="myFunction()">Click here</button>
+    <hr>
+    <h4>Results :</h4>
+    <div class="span6 well">
+        <h4><ul class="list-unstyled" id="results"></ul></h4>
+    </div>
 
-  <h2 id="result"></h2>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("pingpong");
+        var num = x.elements[0].value;
+        var listIt = "";
+        var i;
+          for (i = 1; i <= num; i++) {
+          listIt += "<li>";
+          if ((i % 3 === 0) && (i % 5 === 0)) {
+            listIt += "<b>ping-pong</b>";
+          }
+          else if (i % 3 === 0) {
+            listIt += "<b>ping</b>";
+          }
+          else if (i % 5 === 0) {
+            listIt += "<b>pong</b>";
+          }
+          else {
+            listIt += i;
+          }
+          listIt += "</li>";
+          }
+          document.getElementById("results").innerHTML = listIt;
+      }
+    </script>
+    </div>
 </div>
-
-<script>
-function myFunction() {
-    var number = prompt("Enter a number");
-
-    if (number % 3 == 0 && number % 5 == 0) {
-        document.getElementById("result").innerHTML =
-        "Ping Pong";
-    }
-    else if (number % 3 == 0) {
-        document.getElementById("result").innerHTML =
-        "Ping";
-    }
-    else if (number % 5 == 0) {
-        document.getElementById("result").innerHTML =
-        "Pong";
-    }
-    else {
-        document.getElementById("result").innerHTML =
-        "Bada bing, bada boom!! It's not a Ping, nor a Pong!!!!";
-    }
-}
-</script>
