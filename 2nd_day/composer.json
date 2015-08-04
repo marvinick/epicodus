@@ -1,0 +1,6 @@
+{
+  "require": {
+    "silex/silex": "~1.1",
+    "phpunit/phpunit": "4.5.*"
+  }
+}
